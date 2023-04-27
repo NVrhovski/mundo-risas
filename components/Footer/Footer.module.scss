@@ -1,0 +1,33 @@
+.footerContainer
+{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(8, 195, 102);
+    display: flex;
+    justify-content: space-between;
+    .footerInfo
+    {
+        height: 100%;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        .socialContainer
+        {
+            width: auto;
+            height: auto;
+            display: flex;
+            padding: 30px;
+            img
+            {
+                height: 50px;
+                width: auto;
+                margin: 0 10px;
+            }
+        }
+    }
+    .brandImage
+    {
+        height: 100%;
+        width: auto;
+    }
+}
