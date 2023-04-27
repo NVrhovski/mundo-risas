@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Footer = () => {
     return(
-        <footer>
+        <footer id='contacto'>
             <div className={styles.footerContainer}>
                 <p>Pueyrredón 2136, B1653 Villa Ballester, Provincia de Buenos Aires, Argentina</p>
                 <div className={styles.mailContainer}>

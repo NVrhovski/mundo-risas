@@ -10,11 +10,22 @@
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
-    .brandImage
+    .badgeContainer
     {
-        height: 100%;
-        width: auto;
-        margin: 0 0 0 20px;
+        height: 200%;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: $main-black;
+        margin: 0 0 0 50px;
+        .brandImage
+        {
+            height: 100%;
+            width: auto;
+            margin: -5px 10px 0 0;
+        }
     }
     .sections
     {
@@ -29,7 +40,8 @@
         li
         {
             height: 70%;
-            padding: 0 20px;
+            padding: 0 10px;
+            margin: 0 10px;
             transition: 400ms all ease-in-out;
             display: flex;
             align-items: center;
