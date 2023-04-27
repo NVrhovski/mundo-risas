@@ -1,6 +1,4 @@
 import styles from './Header.module.scss';
-import Image from 'next/image';
-import BrandImage from '../../public/assets/icons/brand-icon.png';
 import Link from 'next/link';
 
 const Header = () => {
@@ -8,7 +6,7 @@ const Header = () => {
         <header>
             <div className={styles.headerContainer}>
                 <Link href={'/'}>
-                    <Image src={BrandImage} alt={'Mundo Risas'} className={styles.brandImage}/>
+                    <img src={'assets/icons/brand-icon-bw.png'} alt={'Mundo Risas'} className={styles.brandImage}/>
                 </Link>
                 <ul className={styles.sections}>
                     <li><Link href={'#eventos'}>EVENTOS</Link></li>
