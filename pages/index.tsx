@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Map from '../components/Map'
+import ImageGallery from '../components/ImageGallery'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet"/>
       </Head>
       <Map/>
+      <ImageGallery/>
     </div>
   )
 }
