@@ -1,33 +1,68 @@
+@import '../../styles/variables.scss';
+
 .footerContainer
 {
     width: 100%;
-    height: 300px;
-    background-color: rgb(8, 195, 102);
+    height: auto;
+    background-color: $main-yellow;
     display: flex;
-    justify-content: space-between;
-    .footerInfo
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 50px;
+    p
     {
-        height: 100%;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        .socialContainer
+        color: white;
+        font-size: 20px;
+        transition: all 400ms ease-in-out;
+        &.phone
         {
-            width: auto;
-            height: auto;
-            display: flex;
-            padding: 30px;
-            img
+            &:hover 
             {
-                height: 50px;
-                width: auto;
-                margin: 0 10px;
+                color: $main-black;
             }
         }
     }
-    .brandImage
+    .mailContainer
     {
-        height: 100%;
-        width: auto;
+        width: fit-content;
+        padding: 15px 15%;
+        border: 1px solid white;
+        p
+        {
+            color: $main-black;
+            margin: 0;
+            transition: all 400ms ease-in-out;
+            &:hover 
+            {
+                color: white;
+            }
+        }
+    }
+    .iconsContainer
+    {
+        width: 70%;
+        height: auto;
+        border-top: solid 1px $main-black;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 15px 0;
+        .icon
+        {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            padding: 10px;
+            transition: all 400ms ease-in-out;
+            &:hover 
+            {
+                background-color: $main-black;
+            }
+            img 
+            {
+                width: 100%;
+            }
+        }
     }
 }

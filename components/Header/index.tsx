@@ -11,10 +11,10 @@ const Header = () => {
                     <Image src={BrandImage} alt={'Mundo Risas'} className={styles.brandImage}/>
                 </Link>
                 <ul className={styles.sections}>
-                    <li><Link href={'#eventos'}>Eventos</Link></li>
-                    <li><Link href={'#catering'}>Catering</Link></li>
-                    <li><Link href={'#galeria'}>Galeria</Link></li>
-                    <li><Link href={'#contacto'}>Contacto</Link></li>
+                    <li><Link href={'#eventos'}>EVENTOS</Link></li>
+                    <li><Link href={'#catering'}>CATERING</Link></li>
+                    <li><Link href={'#galeria'}>GALERÍA</Link></li>
+                    <li><Link href={'#contacto'}>CONTACTO</Link></li>
                 </ul>
             </div>
         </header> 
