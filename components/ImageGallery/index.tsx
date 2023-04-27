@@ -8,7 +8,7 @@ const ImageGallery = () => {
     let swiper: any;
 
     return (
-        <div className={styles.mainGalleryContainer}>
+        <div className={styles.mainGalleryContainer} id='galeria'>
             <div className={styles.swiperWrapper}>
                 <Swiper
                 modules={[Autoplay]}

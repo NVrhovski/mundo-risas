@@ -31,6 +31,10 @@
             cursor: pointer;
             transition: all 400ms ease-in-out;
             padding: 10px;
+            &:hover
+            {
+                background-color: white;
+            }
             img
             {
                 width: 100%;
@@ -50,6 +54,10 @@
             cursor: pointer;
             transition: all 400ms ease-in-out;
             padding: 10px;
+            &:hover
+            {
+                background-color: white;
+            }
             img
             {
                 width: 100%;
