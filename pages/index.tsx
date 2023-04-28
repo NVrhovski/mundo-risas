@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Map from '../components/Map'
 import ImageGallery from '../components/ImageGallery'
+import Services from '../components/Services'
 
 export default function Home() {
   return (
@@ -13,8 +14,9 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet"/>
       </Head>
-      <Map/>
       <ImageGallery/>
+      <Services/>
+      <Map/>
     </div>
   )
 }
