@@ -12,9 +12,8 @@ const Header = () => {
                 </div>
                 <ul className={styles.sections}>
                     <li><Link href={'#inicio'}>INICIO</Link></li>
-                    <li><Link href={''}>SERVICIOS</Link></li>
+                    <li><Link href={'#servicios'}>SERVICIOS</Link></li>
                     <li><Link href={'#galeria'}>GALERÍA</Link></li>
-                    <li><Link href={''}>PRECIOS</Link></li>
                     <li><Link href={''}>RESERVAS</Link></li>
                     <li><Link href={''}>TESTIMONIOS</Link></li>
                     <li><Link href={'#contacto'}>CONTACTO</Link></li>

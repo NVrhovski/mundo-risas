@@ -3,7 +3,7 @@ import styles from './Services.module.scss'
 
 const Services = () => {
     return(
-        <div className={styles.mainServicesContainer}>
+        <div className={styles.mainServicesContainer} id='servicios'>
             <h2>Servicios</h2>
             <div className={styles.servicesGrid}>
                 <ServicesCard image='assets/images/gallery-1.jpg' title='Egresaditos'/>

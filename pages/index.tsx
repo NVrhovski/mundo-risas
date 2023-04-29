@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Map from '../components/Map'
 import ImageGallery from '../components/ImageGallery'
 import Services from '../components/Services'
+import Contact from '../components/Contact'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       </Head>
       <ImageGallery/>
       <Services/>
+      <Contact/>
       <Map/>
     </div>
   )
