@@ -14,20 +14,20 @@ const Contact = () => {
 
     return(
         <div className={styles.mainContactContainer} id='contacto'>
-            <h3>Cotizá tu fiesta</h3>
+            <h3>COTIZÁ TU FIESTA</h3>
             <form onSubmit={handleSubmit(handleFormSubmit)}>
-                <span>Tipo de festejo</span>
+                <span>TIPO DE FESTEJO</span>
                 <select {...register('eventType', {required: true})} style={errors.eventType ? {borderColor: 'red'} : {}}>
                     <option value={''}>-- Elegí el tipo de festejo --</option>
                     <option value={'cumpleaños'}>Cumpleaños</option>
                     <option value={'fiesta de 15'}>Fiesta de 15</option>
                     <option value={'egresaditos'}>Egresaditos</option>
                 </select>
-                <span>Cantidad de invitados</span>
+                <span>CANTIDAD DE INVITADOS</span>
                 <input type='number' {...register('participants', {required: true})} style={errors.participants ? {borderColor: 'red'} : {}}/>
-                <span>Fecha</span>
+                <span>FECHA</span>
                 <input type='date' min={moment().format('YYYY-MM-DD')}{...register('date', {required: true})} style={errors.date ? {borderColor: 'red'} : {}}/>
-                <button type='submit'>Contactar</button>
+                <button type='submit'>CONTACTAR</button>
             </form>
         </div>
     )
