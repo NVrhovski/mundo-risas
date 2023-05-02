@@ -48,6 +48,7 @@
             align-items: center;
             justify-content: center;
             border: solid 1px $main-black;
+            cursor: pointer;
             &:hover
             {
                 border: solid 1px $main-yellow;

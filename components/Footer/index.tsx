@@ -17,17 +17,17 @@ const Footer = () => {
                 <div className={styles.iconsContainer}>
                     <Link href={'https://www.instagram.com/salonmundorisas'}>
                         <div className={styles.icon}>
-                            <img src='assets/icons/instagram-icon.png'/>
+                            <img src='assets/icons/instagram-icon.png' alt='Instagram'/>
                         </div>
                     </Link>
                     <Link href={'https://www.facebook.com/mundo.risas.16'}>
                         <div className={styles.icon}>
-                            <img src='assets/icons/facebook-icon.png'/>
+                            <img src='assets/icons/facebook-icon.png' alt='Facebook'/>
                         </div>
                     </Link>
                     <Link href={'https://wa.me/1164338628'}>
                         <div className={styles.icon}>
-                            <img src='assets/icons/whatsapp-icon.png'/>
+                            <img src='assets/icons/whatsapp-icon.png' alt='Whatsapp'/>
                         </div>
                     </Link>
                 </div>

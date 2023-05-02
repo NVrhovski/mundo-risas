@@ -39,7 +39,7 @@ const ServicesCard = ({image, title}: IPropsServicesCard) => {
     return(
         <>
             <div className={styles.serviceItem} onMouseOver={(() => {toggleDescription(true)})} onMouseLeave={(() => {toggleDescription(false)})}>
-                <img src={image}/>
+                <img src={image} alt='Salón Mundo Risas'/>
                 <div className={styles.itemFooter}>
                     <span>{title}</span>
                 </div> 

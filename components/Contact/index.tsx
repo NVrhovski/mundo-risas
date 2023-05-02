@@ -13,15 +13,20 @@ const Contact = () => {
     }
 
     return(
-        <div className={styles.mainContactContainer} id='contacto'>
-            <h3>COTIZÁ TU FIESTA</h3>
+        <div className={styles.mainContactContainer}>
+            <div className={styles.contactAnchor} id='reservas'></div>
+            <h3>COTIZÁ TU EVENTO</h3>
             <form onSubmit={handleSubmit(handleFormSubmit)}>
                 <span>TIPO DE FESTEJO</span>
                 <select {...register('eventType', {required: true})} style={errors.eventType ? {borderColor: 'red'} : {}}>
                     <option value={''}>-- Elegí el tipo de festejo --</option>
-                    <option value={'cumpleaños'}>Cumpleaños</option>
-                    <option value={'fiesta de 15'}>Fiesta de 15</option>
+                    <option value={'fiesta infantil'}>Fiesta Infantil</option>
+                    <option value={'fiesta teen'}>Fiesta Teen</option>
+                    <option value={'bautismo / comunión'}>Bautismo / Comunión</option>
                     <option value={'egresaditos'}>Egresaditos</option>
+                    <option value={'aniversario'}>Aniversario</option>
+                    <option value={'casamiento'}>Casamiento</option>
+                    <option value={'otro'}>Otro</option>
                 </select>
                 <span>CANTIDAD DE INVITADOS</span>
                 <div className={styles.participantsContainer}>
