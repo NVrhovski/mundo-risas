@@ -103,6 +103,12 @@
             right: 10px;
             width: 30px;
             cursor: pointer;
+            border-radius: 50%;
+            transition: all 400ms ease-in-out;
+            &:hover
+            {
+                border: 2px solid $main-yellow;
+            }
         }
         span
         {
