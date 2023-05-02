@@ -3,10 +3,11 @@ import styles from './ServicesCard.module.scss'
 
 interface IPropsServicesCard {
     image: string,
-    title: string
+    title: string,
+    description: string
 }
 
-const ServicesCard = ({image, title}: IPropsServicesCard) => {
+const ServicesCard = ({image, title, description}: IPropsServicesCard) => {
 
     const shadowRef = useRef<any>(null);
     const modalRef = useRef<any>(null);
@@ -44,7 +45,7 @@ const ServicesCard = ({image, title}: IPropsServicesCard) => {
                     <span>{title}</span>
                 </div> 
                 <div className={styles.serviceDescriptionContainer} ref={shadowRef}>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur eligendi corrupti explicabo nemo quod. Debitis sit eius atque id nulla. Sequi quidem eos obcaecati rem enim quibusdam labore vitae nisi?</p>
+                    <p>{description}</p>
                     <button onClick={(() => {toggleModal(true)})}>SABER MÁS</button>
                 </div>
             </div>
