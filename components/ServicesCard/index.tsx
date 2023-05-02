@@ -9,6 +9,7 @@ interface IPropsServicesCard {
 const ServicesCard = ({image, title}: IPropsServicesCard) => {
 
     const shadowRef = useRef<any>(null);
+    const modalRef = useRef<any>(null);
     const [showModal, setShowModal] = useState(false);
 
     const toggleDescription = (option: boolean): void => {
@@ -22,6 +23,19 @@ const ServicesCard = ({image, title}: IPropsServicesCard) => {
         }
     }
 
+    const toggleModal = (option: boolean): void => {
+        if(option)
+        {
+            setShowModal(true);
+            setTimeout(() => {
+                modalRef.current.style.transform = 'scale(1.1)'
+            },0)
+        }else 
+        {
+            setShowModal(false);
+        }
+    }
+
     return(
         <>
             <div className={styles.serviceItem} onMouseOver={(() => {toggleDescription(true)})} onMouseLeave={(() => {toggleDescription(false)})}>
@@ -31,13 +45,13 @@ const ServicesCard = ({image, title}: IPropsServicesCard) => {
                 </div> 
                 <div className={styles.serviceDescriptionContainer} ref={shadowRef}>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur eligendi corrupti explicabo nemo quod. Debitis sit eius atque id nulla. Sequi quidem eos obcaecati rem enim quibusdam labore vitae nisi?</p>
-                    <button onClick={(() => {setShowModal(true)})}>SABER MÁS</button>
+                    <button onClick={(() => {toggleModal(true)})}>SABER MÁS</button>
                 </div>
             </div>
             {showModal ? 
             <div className={styles.modalContainer}>
-                <div className={styles.modalBody}>
-                    <img onClick={(() => {setShowModal(false)})} src='assets/icons/close-icon.png' alt='cerrar'/>
+                <div className={styles.modalBody} ref={modalRef}>
+                    <img onClick={(() => {toggleModal(false)})} src='assets/icons/close-icon.png' alt='cerrar'/>
                     <span>{title}</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sapiente commodi eaque animi est dolorem accusamus reiciendis deserunt maiores consequuntur veritatis accusantium aspernatur libero natus tempore atque, enim laboriosam sint! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quisquam ullam perspiciatis placeat velit, nobis amet. Suscipit nisi eius labore aspernatur, dolores sint et veniam omnis culpa magni soluta fugiat?</p>
                 </div>
