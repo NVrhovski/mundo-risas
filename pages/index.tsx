@@ -3,8 +3,12 @@ import Map from '../components/Map'
 import ImageGallery from '../components/ImageGallery'
 import Services from '../components/Services'
 import Contact from '../components/Contact'
+import { useMediaQuery } from 'react-responsive'
 
 export default function Home() {
+
+  const isMobile = useMediaQuery({query: '(max-width: 1000px)'})
+
   return (
     <div>
       <Head>
@@ -23,7 +27,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&display=swap" rel="stylesheet"></link>
       </Head>
-      <ImageGallery/>
+      <ImageGallery isMobile={isMobile}/>
       <Services/>
       <Contact/>
       <Map/>

@@ -10,6 +10,10 @@
     justify-content: end;
     position: relative;
     overflow: hidden;
+    @media (max-width: 1000px)
+    {
+        height: 260px;
+    }
     img
     {
         width: 100%;
@@ -45,6 +49,11 @@
         justify-content: center;
         align-items: center;
         padding: 0 15px;
+        @media (max-width: 1000px)
+        {
+            overflow: scroll;
+            height: 100%;
+        }
         button
         {
             width: 40%;
@@ -57,6 +66,11 @@
             font-weight: 700;
             font-size: 16px;
             transition: all 400ms ease-in-out;
+            @media (max-width: 1000px)
+            {
+                width: 80%;
+                margin: 0 0 10px 0;
+            }
             &:hover
             {
                 border: 2px solid $main-yellow;
@@ -68,6 +82,10 @@
             color: white;
             text-align: center;
             font-weight: 300;
+            @media (max-width: 1000px)
+            {
+                font-size: 13px;
+            }
         }
     }
 }
@@ -84,6 +102,10 @@
     justify-content: center;
     align-items: center;
     z-index: 2;
+    @media (max-width: 1000px)
+    {
+        z-index: 3;
+    }
     .modalBody
     {
         width: 60%;
@@ -97,6 +119,13 @@
         padding: 20px;
         border: 2px solid $main-yellow;
         transition: all 400ms ease-in-out;
+        @media (max-width: 1000px)
+        {
+            width: 80%;
+            height: 70vh;
+            padding: 50px 20px;
+            overflow: scroll;
+        }
         img
         {
             position: absolute;
@@ -106,6 +135,10 @@
             cursor: pointer;
             border-radius: 50%;
             transition: all 400ms ease-in-out;
+            @media (max-width: 1000px)
+            {
+                border: 2px solid $main-yellow;
+            }
             &:hover
             {
                 border: 2px solid $main-yellow;
@@ -115,6 +148,10 @@
         {
             font-size: 30px;
             color: $main-yellow;
+            @media (max-width: 1000px)
+            {
+                text-align: center;
+            }
         }
         p
         {

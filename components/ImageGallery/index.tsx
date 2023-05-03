@@ -3,7 +3,12 @@ import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import styles from './ImageGallery.module.scss';
 import 'swiper/css';
 
-const ImageGallery = () => {
+interface IPropsGallery
+{
+    isMobile: boolean
+}
+
+const ImageGallery = ({isMobile}: IPropsGallery) => {
 
     let swiper: any;
 
@@ -17,54 +22,141 @@ const ImageGallery = () => {
                 autoplay
                 onSwiper={((s) => {swiper = s})}
                 >
-                    <SwiperSlide>
-                        <img src='assets/images/gallery-1.jpg' alt='Salón Mundo Risas'/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src='assets/images/gallery-2.jpg' alt='Salón Mundo Risas'/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src='assets/images/gallery-3.jpg' alt='Salón Mundo Risas'/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src='assets/images/gallery-4.jpg' alt='Salón Mundo Risas'/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src='assets/images/gallery-5.jpg' alt='Salón Mundo Risas'/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src='assets/images/gallery-6.jpg' alt='Salón Mundo Risas'/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src='assets/images/gallery-7.jpg' alt='Salón Mundo Risas'/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src='assets/images/gallery-8.jpg' alt='Salón Mundo Risas'/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src='assets/images/gallery-9.jpg' alt='Salón Mundo Risas'/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src='assets/images/gallery-10.jpg' alt='Salón Mundo Risas'/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src='assets/images/gallery-11.jpg' alt='Salón Mundo Risas'/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src='assets/images/gallery-12.jpg' alt='Salón Mundo Risas'/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src='assets/images/gallery-13.jpg' alt='Salón Mundo Risas'/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src='assets/images/gallery-14.jpg' alt='Salón Mundo Risas'/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src='assets/images/gallery-15.jpg' alt='Salón Mundo Risas'/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src='assets/images/gallery-16.jpg' alt='Salón Mundo Risas'/>
-                    </SwiperSlide>
+                    {isMobile ?
+                        <>
+                        <SwiperSlide>
+                            <div className={styles.swiperImgContainer}>
+                                <img src='assets/images/gallery-1.jpg' alt='Salón Mundo Risas'/>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={styles.swiperImgContainer}>
+                                <img src='assets/images/gallery-2.jpg' alt='Salón Mundo Risas'/>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={styles.swiperImgContainer}>
+                                <img src='assets/images/gallery-3.jpg' alt='Salón Mundo Risas' style={{width: '45%'}}/>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={styles.swiperImgContainer}>
+                                <img src='assets/images/gallery-4.jpg' alt='Salón Mundo Risas' style={{width: '45%'}}/>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={styles.swiperImgContainer}>
+                                <img src='assets/images/gallery-5.jpg' alt='Salón Mundo Risas'/>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={styles.swiperImgContainer}>
+                                <img src='assets/images/gallery-6.jpg' alt='Salón Mundo Risas'/>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={styles.swiperImgContainer}>
+                                <img src='assets/images/gallery-7.jpg' alt='Salón Mundo Risas'/>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={styles.swiperImgContainer}>
+                                <img src='assets/images/gallery-8.jpg' alt='Salón Mundo Risas'/>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={styles.swiperImgContainer}>
+                                <img src='assets/images/gallery-9.jpg' alt='Salón Mundo Risas'/>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={styles.swiperImgContainer}>
+                                <img src='assets/images/gallery-10.jpg' alt='Salón Mundo Risas'/>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={styles.swiperImgContainer}>
+                                <img src='assets/images/gallery-11.jpg' alt='Salón Mundo Risas'/>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={styles.swiperImgContainer}>
+                                <img src='assets/images/gallery-12.jpg' alt='Salón Mundo Risas'/>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={styles.swiperImgContainer}>
+                                <img src='assets/images/gallery-13.jpg' alt='Salón Mundo Risas' style={{width: '70%'}}/>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={styles.swiperImgContainer}>
+                                <img src='assets/images/gallery-14.jpg' alt='Salón Mundo Risas' style={{width: '70%'}}/>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={styles.swiperImgContainer}>
+                                <img src='assets/images/gallery-15.jpg' alt='Salón Mundo Risas' style={{width: '65%'}}/>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={styles.swiperImgContainer}>
+                                <img src='assets/images/gallery-16.jpg' alt='Salón Mundo Risas'/>
+                            </div>
+                        </SwiperSlide>
+                        </>
+                        :
+                        <>
+                        <SwiperSlide>
+                                <img src='assets/images/gallery-1.jpg' alt='Salón Mundo Risas'/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <img src='assets/images/gallery-2.jpg' alt='Salón Mundo Risas'/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <img src='assets/images/gallery-3.jpg' alt='Salón Mundo Risas'/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <img src='assets/images/gallery-4.jpg' alt='Salón Mundo Risas'/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <img src='assets/images/gallery-5.jpg' alt='Salón Mundo Risas'/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <img src='assets/images/gallery-6.jpg' alt='Salón Mundo Risas'/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <img src='assets/images/gallery-7.jpg' alt='Salón Mundo Risas'/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <img src='assets/images/gallery-8.jpg' alt='Salón Mundo Risas'/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <img src='assets/images/gallery-9.jpg' alt='Salón Mundo Risas'/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <img src='assets/images/gallery-10.jpg' alt='Salón Mundo Risas'/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <img src='assets/images/gallery-11.jpg' alt='Salón Mundo Risas'/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <img src='assets/images/gallery-12.jpg' alt='Salón Mundo Risas'/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <img src='assets/images/gallery-13.jpg' alt='Salón Mundo Risas'/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <img src='assets/images/gallery-14.jpg' alt='Salón Mundo Risas'/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <img src='assets/images/gallery-15.jpg' alt='Salón Mundo Risas'/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <img src='assets/images/gallery-16.jpg' alt='Salón Mundo Risas'/>
+                        </SwiperSlide>
+                        </>
+                    }
                 </Swiper>
                 <div className={styles.leftArrow} onClick={(() => {swiper.slidePrev()})}>
                     <img src='assets/icons/arrow-icon.png' alt='Anterior'/>
