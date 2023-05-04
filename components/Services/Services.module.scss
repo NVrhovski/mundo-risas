@@ -36,43 +36,6 @@
             flex-direction: column;
             align-items: center;
             width: 100%;
-            .imgContainer
-            {
-                width: 100%;
-                height: auto;
-                position: relative;
-                img
-                {
-                    width: 100%;
-                    height: auto;
-                }
-                button
-                {
-                    width: 40%;
-                    height: 40px;
-                    border-radius: 10px;
-                    text-align: center;
-                    background-color: $main-black;
-                    border: 2px solid $main-yellow;
-                    color: white;
-                    font-weight: 700;
-                    font-size: 16px;
-                    transition: all 400ms ease-in-out;
-                    position: absolute;
-                    left: 10px;
-                    bottom: 20px;
-                }
-            }
-            .categoriesContainer
-            {
-                width: 100%;
-                height: auto;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                padding: 0 20px;
-                row-gap: 20px;
-                column-gap: 10px;
-            }
         }
     }
 }
