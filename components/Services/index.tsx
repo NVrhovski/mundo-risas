@@ -1,4 +1,5 @@
 import ServicesCard from '../ServicesCard'
+import ServicesDropdown from '../ServicesDropdown'
 import styles from './Services.module.scss'
 
 interface IPropsServices
@@ -13,7 +14,7 @@ const Services = ({isMobile}: IPropsServices) => {
             <h2>SERVICIOS</h2>
             {isMobile ? 
             <div className={styles.servicesGrid}>
-                <div className={styles.imgContainer}>
+                {/* <div className={styles.imgContainer}>
                     <img src='assets/images/gallery-1.jpg' alt='Mundo Risas'/>
                     <button>SABER MÁS</button>
                 </div>
@@ -24,7 +25,8 @@ const Services = ({isMobile}: IPropsServices) => {
                     <span>COMUNIONES</span>
                     <span>EGRESADOS</span>
                     <span>EGRESADITOS</span>
-                </div>
+                </div> */}
+                <ServicesDropdown/>
             </div>
             :
             <div className={styles.servicesGrid}>

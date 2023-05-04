@@ -1,0 +1,59 @@
+@import '../../styles/variables.scss';
+
+.dropdownMainContainer
+{
+    width: 80%;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid $main-black;
+    background-color: white;
+    transition: all 400ms ease-in-out;
+    .header
+    {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        border-bottom: 2px solid black;
+        position: relative;
+        span 
+        {
+            font-weight: 500;
+            font-size: 20px;
+        }
+        img
+        {
+            width: 15px;
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            transform: rotate(90deg);
+            transition: all 400ms ease-in-out;
+        }
+    }
+    .body
+    {
+        width: 100%;
+        height: 240px;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px 20px 20px;
+        button
+        {
+            width: 60%;
+            height: 50px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: white;
+            border: 2px solid $main-yellow;
+            color: $main-black;
+            font-weight: 700;
+            font-size: 16px;
+        }
+    }
+}
