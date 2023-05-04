@@ -14,29 +14,35 @@ const Contact = () => {
 
     return(
         <div className={styles.mainContactContainer}>
+            <div className={styles.backgroundShadow}>
+                <div></div>
+            </div>
             <div className={styles.contactAnchor} id='reservas'></div>
             <h3>COTIZÁ TU EVENTO</h3>
-            <form onSubmit={handleSubmit(handleFormSubmit)}>
-                <span>TIPO DE FESTEJO</span>
-                <select {...register('eventType', {required: true})} style={errors.eventType ? {borderColor: 'red'} : {}}>
-                    <option value={''}>-- Elegí el tipo de festejo --</option>
-                    <option value={'fiesta infantil'}>Fiesta Infantil</option>
-                    <option value={'fiesta teen'}>Fiesta Teen</option>
-                    <option value={'bautismo / comunión'}>Bautismo / Comunión</option>
-                    <option value={'egresaditos'}>Egresaditos</option>
-                    <option value={'aniversario'}>Aniversario</option>
-                    <option value={'casamiento'}>Casamiento</option>
-                    <option value={'otro'}>Otro</option>
-                </select>
-                <span>CANTIDAD DE INVITADOS</span>
-                <div className={styles.participantsContainer}>
-                    <input placeholder='Niños' type='number' {...register('participantsKids', {required: true})} style={errors.participantsKids ? {borderColor: 'red'} : {}}/>
-                    <input placeholder='Adultos' type='number' {...register('participantsAdults', {required: true})} style={errors.participantsAdults ? {borderColor: 'red'} : {}}/>
-                </div>
-                <span>FECHA SOLICITADA</span>
-                <input type='date' min={moment().format('YYYY-MM-DD')}{...register('date', {required: true})} style={errors.date ? {borderColor: 'red'} : {}}/>
-                <button type='submit'>CONTACTAR</button>
-            </form>
+            <div className={styles.formContainer}>
+                <img src='assets/images/gallery-1.jpg' alt='Mundo Risas'/>
+                <form onSubmit={handleSubmit(handleFormSubmit)}>
+                    <span>TIPO DE FESTEJO</span>
+                    <select {...register('eventType', {required: true})} style={errors.eventType ? {borderColor: 'red'} : {}}>
+                        <option value={''}>-- Elegí el tipo de festejo --</option>
+                        <option value={'fiesta infantil'}>Fiesta Infantil</option>
+                        <option value={'fiesta teen'}>Fiesta Teen</option>
+                        <option value={'bautismo / comunión'}>Bautismo / Comunión</option>
+                        <option value={'egresaditos'}>Egresaditos</option>
+                        <option value={'aniversario'}>Aniversario</option>
+                        <option value={'casamiento'}>Casamiento</option>
+                        <option value={'otro'}>Otro</option>
+                    </select>
+                    <span>CANTIDAD DE INVITADOS</span>
+                    <div className={styles.participantsContainer}>
+                        <input placeholder='Niños' type='number' {...register('participantsKids', {required: true})} style={errors.participantsKids ? {borderColor: 'red'} : {}}/>
+                        <input placeholder='Adultos' type='number' {...register('participantsAdults', {required: true})} style={errors.participantsAdults ? {borderColor: 'red'} : {}}/>
+                    </div>
+                    <span>FECHA SOLICITADA</span>
+                    <input type='date' min={moment().format('YYYY-MM-DD')}{...register('date', {required: true})} style={errors.date ? {borderColor: 'red'} : {}}/>
+                    <button type='submit'>CONTACTAR</button>
+                </form>
+            </div>
         </div>
     )
 }

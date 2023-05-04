@@ -4,10 +4,19 @@ import ImageGallery from '../components/ImageGallery'
 import Services from '../components/Services'
 import Contact from '../components/Contact'
 import { useMediaQuery } from 'react-responsive'
+import HelpBadge from '../components/HelpBadge'
+import { useEffect, useState } from 'react'
 
 export default function Home() {
 
   const isMobile = useMediaQuery({query: '(max-width: 1000px)'})
+  const [showBadge, setShowBadge] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowBadge(true)
+    },5000)
+  },[])
 
   return (
     <div>
@@ -31,6 +40,11 @@ export default function Home() {
       <Services/>
       <Contact/>
       <Map/>
+      {isMobile ? '' : 
+          showBadge ? 
+          <HelpBadge setShowBadge={setShowBadge}/>
+          : ''
+      }
     </div>
   )
 }
