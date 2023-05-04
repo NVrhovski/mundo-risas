@@ -21,7 +21,7 @@ const HelpBadge = ({setShowBadge}: IPropsHelpBadge) => {
     return(
         <div className={styles.helpBadgeContainer} ref={badgeRef}>
             <Link href={'https://api.whatsapp.com/send?phone=5491164338628'} target='_blank'>
-                <p>Cómo puedo ayudarte</p>
+                <p>¿Cómo puedo ayudarte?</p>
                 <img className={styles.badgeIcon} src='assets/icons/brand-icon.png' alt='Mundo Risas'/>
             </Link>
             <img onClick={(() => {setShowBadge(false)})} className={styles.closeIcon} src='assets/icons/close-icon.png' alt='cerrar'/>

@@ -5,7 +5,9 @@ const Footer = () => {
     return(
         <footer id='contacto'>
             <div className={styles.footerContainer}>
-                <p>Pueyrredón 2136, B1653 Villa Ballester, Provincia de Buenos Aires, Argentina</p>
+                <Link href={'https://www.google.com/maps/dir//Mundo+Risas+Pueyrred%C3%B3n+2136+B1653+Villa+Ballester+Provincia+de+Buenos+Aires,+Argentina/@-34.5466342,-58.5477692,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x95bcb75342d9ad87:0x971a75711cf357d6'}>
+                    <p>Pueyrredón 2136, B1653 Villa Ballester, Provincia de Buenos Aires, Argentina</p>
+                </Link>
                 <div className={styles.mailContainer}>
                     <Link href={'mailto:info@mundorisas.com'}>
                         <p>info@mundorisas.com</p>
