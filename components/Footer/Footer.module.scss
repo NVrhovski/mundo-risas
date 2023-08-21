@@ -11,7 +11,7 @@
     padding: 30px 50px;
     p
     {
-        color: white;
+        color: $details;
         font-size: 20px;
         transition: all 400ms ease-in-out;
         font-weight: 300;
@@ -24,7 +24,7 @@
     {
         width: fit-content;
         padding: 15px 15%;
-        border: 1px solid white;
+        border: 1px solid $details;
         p
         {
             color: $main-black;
@@ -40,7 +40,7 @@
     {
         width: 70%;
         height: auto;
-        border-top: solid 1px $main-black;
+        border-top: solid 1px $details;
         display: flex;
         justify-content: center;
         gap: 15px;
@@ -49,13 +49,13 @@
         {
             width: 50px;
             height: 50px;
-            background-color: white;
+            background-color: $main-black;
             border-radius: 50%;
             padding: 10px;
             transition: all 400ms ease-in-out;
             &:hover 
             {
-                background-color: $main-black;
+                background-color: $details;
             }
             img 
             {
