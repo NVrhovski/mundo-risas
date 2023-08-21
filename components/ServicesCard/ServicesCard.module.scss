@@ -7,7 +7,7 @@
     background-color: $main-black;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     position: relative;
     overflow: hidden;
     @media (max-width: 1000px)
