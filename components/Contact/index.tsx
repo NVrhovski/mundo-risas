@@ -15,7 +15,7 @@ const Contact = () => {
     return(
         <div className={styles.mainContactContainer}>
             <div className={styles.contactAnchor} id='reservas'></div>
-            <h3>COTIZÁ TU EVENTO</h3>
+            <h3>COTIZA TU EVENTO</h3>
             <form onSubmit={handleSubmit(handleFormSubmit)}>
                 <span>TIPO DE FESTEJO</span>
                 <select {...register('eventType', {required: true})} style={errors.eventType ? {borderColor: 'red'} : {}}>

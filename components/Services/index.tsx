@@ -11,7 +11,7 @@ const Services = ({isMobile}: IPropsServices) => {
     return(
         <div className={styles.mainServicesContainer}>
             <div className={styles.servicesAnchor} id='servicios'></div>
-            <h2>ENCONTRÁ TU EVENTO</h2>
+            <h2>ENCONTRA TU EVENTO</h2>
             {isMobile ? 
             <div className={styles.servicesGrid}>
                 <ServicesDropdown title='FIESTAS INFANTILES' description='Celebrá el cumpleaños de tus hijos con nosotros. Ofrecemos una amplia variedad de opciones de entretenimiento, desde juegos animados hasta maquillaje y disfraces para los niños más pequeños. También contamos con actividades como escalar, bailar bajo una lluvia de burbujas y un espectacular show de Robot LED.'/>
