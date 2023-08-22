@@ -1,7 +1,8 @@
 import { Autoplay } from 'swiper';
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import styles from './ImageGallery.module.scss';
 import 'swiper/css';
+import { useRef } from 'react';
 
 interface IPropsGallery
 {
@@ -10,8 +11,8 @@ interface IPropsGallery
 
 const ImageGallery = ({isMobile}: IPropsGallery) => {
 
-    let swiper: any;
-
+    let swiper = useRef<any>(null);
+    
     return (
         <div className={styles.mainGalleryContainer} id='galeria'>
             <div className={styles.swiperWrapper}>
@@ -20,7 +21,7 @@ const ImageGallery = ({isMobile}: IPropsGallery) => {
                 slidesPerView={1}   
                 loop
                 autoplay
-                onSwiper={((s) => {swiper = s})}
+                onSwiper={((s) => {swiper.current = s})}
                 >
                     {isMobile ?
                         <>
@@ -99,11 +100,6 @@ const ImageGallery = ({isMobile}: IPropsGallery) => {
                                 <img src='assets/images/gallery-15.jpg' alt='Salón Mundo Risas' style={{width: '65%'}}/>
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide>
-                            <div className={styles.swiperImgContainer}>
-                                <img src='assets/images/gallery-16.jpg' alt='Salón Mundo Risas'/>
-                            </div>
-                        </SwiperSlide>
                         </>
                         :
                         <>
@@ -152,16 +148,13 @@ const ImageGallery = ({isMobile}: IPropsGallery) => {
                         <SwiperSlide>
                                 <img src='assets/images/gallery-15.jpg' alt='Salón Mundo Risas'/>
                         </SwiperSlide>
-                        <SwiperSlide>
-                                <img src='assets/images/gallery-16.jpg' alt='Salón Mundo Risas'/>
-                        </SwiperSlide>
                         </>
                     }
                 </Swiper>
-                <div className={styles.leftArrow} onClick={(() => {swiper.slidePrev()})}>
+                <div className={styles.leftArrow} onClick={(() => {swiper.current.slidePrev()})}>
                     <img src='assets/icons/arrow-icon.png' alt='Anterior'/>
                 </div>
-                <div className={styles.rightArrow} onClick={(() => {swiper.slideNext()})}>
+                <div className={styles.rightArrow} onClick={(() => {swiper.current.slideNext()})}>
                     <img src='assets/icons/arrow-icon.png' alt='Siguiente'/>
                 </div>
             </div>
