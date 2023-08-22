@@ -30,7 +30,7 @@
         {
             font-weight: 300;
             font-size: 25px;
-            color: white;
+            color: $main-yellow;
             text-align: center;
         }
     }
@@ -79,7 +79,7 @@
         }
         p
         {
-            color: white;
+            color: $main-yellow;
             text-align: center;
             font-weight: 300;
             @media (max-width: 1000px)

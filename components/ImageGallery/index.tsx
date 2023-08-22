@@ -37,12 +37,12 @@ const ImageGallery = ({isMobile}: IPropsGallery) => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className={styles.swiperImgContainer}>
-                                <img src='assets/images/gallery-3.jpg' alt='Salón Mundo Risas' style={{width: '45%'}}/>
+                                <img src='assets/images/gallery-3.jpg' alt='Salón Mundo Risas'/>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className={styles.swiperImgContainer}>
-                                <img src='assets/images/gallery-4.jpg' alt='Salón Mundo Risas' style={{width: '45%'}}/>
+                                <img src='assets/images/gallery-4.jpg' alt='Salón Mundo Risas'/>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
@@ -87,17 +87,17 @@ const ImageGallery = ({isMobile}: IPropsGallery) => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className={styles.swiperImgContainer}>
-                                <img src='assets/images/gallery-13.jpg' alt='Salón Mundo Risas' style={{width: '70%'}}/>
+                                <img src='assets/images/gallery-13.jpg' alt='Salón Mundo Risas'/>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className={styles.swiperImgContainer}>
-                                <img src='assets/images/gallery-14.jpg' alt='Salón Mundo Risas' style={{width: '70%'}}/>
+                                <img src='assets/images/gallery-14.jpg' alt='Salón Mundo Risas'/>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className={styles.swiperImgContainer}>
-                                <img src='assets/images/gallery-15.jpg' alt='Salón Mundo Risas' style={{width: '65%'}}/>
+                                <img src='assets/images/gallery-15.jpg' alt='Salón Mundo Risas'/>
                             </div>
                         </SwiperSlide>
                         </>

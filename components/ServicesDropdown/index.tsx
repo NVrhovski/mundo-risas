@@ -18,7 +18,7 @@ const ServicesDropdown = ({title, description}: IPropsServicesDropdown) => {
         if(dropdownState)
         {
             arrowRef.current.style.transform = 'rotate(90deg)'
-            dropdownRef.current.style.height = '60px'
+            dropdownRef.current.style.height = '0'
             setDropdownState(false);
         }else
         {
@@ -43,12 +43,12 @@ const ServicesDropdown = ({title, description}: IPropsServicesDropdown) => {
 
     return(
         <>
-        <div className={styles.dropdownMainContainer} ref={dropdownRef}>
+        <div className={styles.dropdownMainContainer}>
             <div className={styles.header} onClick={toggleDropdown}>
                 <span>{title}</span>
                 <img src='assets/icons/arrow-icon.png' alt='abrir/cerrar' ref={arrowRef}/>
             </div>
-            <div className={styles.body}>
+            <div className={styles.body} ref={dropdownRef}>
                 <p>{description}</p>
                 <button onClick={(() => {toggleModal(true)})}>SABER MÁS</button>
             </div>
