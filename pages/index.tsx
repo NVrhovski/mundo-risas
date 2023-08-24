@@ -36,6 +36,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"></link>
       </Head>
       <ImageGallery isMobile={isMobile}/>
       <Services isMobile={isMobile}/>
