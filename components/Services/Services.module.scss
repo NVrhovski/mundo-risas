@@ -15,6 +15,31 @@
     {
         padding: 0 20px 30px 20px;
     }
+    >.animatedIcon
+    {
+        width: 30px;
+        height: auto;
+        position: absolute;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        &.brush
+        {
+            animation-name: brush;
+        }
+        &.joystick
+        {
+            animation-name: joystick;
+        }
+        &.star
+        {
+            animation-name: joystick;
+        }
+        &.music
+        {
+            animation-name: music;
+        }
+    }
     .servicesAnchor
     {
         width: 0;
@@ -43,5 +68,32 @@
             align-items: center;
             width: 100%;
         }
+    }
+}
+
+@keyframes brush {
+    50%{
+        left: 20px;
+    }
+    100%{
+        left: 30px;
+    }
+}
+
+@keyframes joystick {
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes music {
+    50%{
+        right: 50px;
+    }
+    100%{
+        right: 60px;
     }
 }
