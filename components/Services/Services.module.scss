@@ -15,6 +15,10 @@
     {
         padding: 0 20px 30px 20px;
     }
+    background-image: url('/assets/icons/joystick-icon.png'), url('/assets/icons/joystick-icon.png'), url('/assets/icons/joystick-icon.png'), url('/assets/icons/music-icon.png'), url('/assets/icons/music-icon.png'), url('/assets/icons/music-icon.png'), url('/assets/icons/star-icon.png'), url('/assets/icons/star-icon.png'), url('/assets/icons/brush-icon.png'),url('/assets/icons/brush-icon.png') ;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: left 15% top 270px, right 10% bottom 240px, top 30px right 10%, bottom 50px left 13%, top 190px right 14%, bottom 200px left 1%, top 50% right 18%, center bottom 20px, top 80px left 30%, top 55%  left 45%;
     >.animatedIcon
     {
         width: 30px;
@@ -25,19 +29,11 @@
         animation-iteration-count: infinite;
         &.brush
         {
-            animation-name: brush;
-        }
-        &.joystick
-        {
-            animation-name: joystick;
+            animation-name: linealMove;
         }
         &.star
         {
-            animation-name: joystick;
-        }
-        &.music
-        {
-            animation-name: music;
+            animation-name: rotate;
         }
     }
     .servicesAnchor
@@ -71,29 +67,20 @@
     }
 }
 
-@keyframes brush {
+@keyframes linealMove {
     50%{
-        left: 20px;
+        transform: translateY(20px);
     }
     100%{
-        left: 30px;
+        transform: translateY(0);
     }
 }
 
-@keyframes joystick {
+@keyframes rotate {
     50%{
         transform: rotate(180deg);
     }
     100%{
         transform: rotate(360deg);
-    }
-}
-
-@keyframes music {
-    50%{
-        right: 50px;
-    }
-    100%{
-        right: 60px;
     }
 }

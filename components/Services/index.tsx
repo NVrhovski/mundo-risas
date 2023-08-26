@@ -26,10 +26,8 @@ const Services = ({isMobile}: IPropsServices) => {
                 <ServicesCard image='assets/images/gallery-1.jpg' title='Bautismos / Comuniones' description='Celebrá este día tan importante de tu hijo o hija con nosotros en un ambiente tranquilo y acogedor. Ofrecemos opciones de catering y actividades para que puedan disfrutar de este momento especial con familiares y amigos.'/>
                 <ServicesCard image='assets/images/gallery-1.jpg' title='Egresados / Egresaditos' description='Conmemorá el fin de esta hermosa etapa en nuestro salón de eventos. Ofrecemos deliciosas opciones de catering, además de entretenimiento, como juegos para grandes y chicos, música, baile y entrega de diplomas para que puedas disfrutar de este momento especial con tu familia.'/>
             </div>}
-            <img src='/assets/icons/brush-icon.png' className={`${styles.animatedIcon} ${styles.brush}`} style={{top: '120px', left: '30px'}}/>
-            <img src='/assets/icons/joystick-icon.png' className={`${styles.animatedIcon} ${styles.joystick}`} style={{top: '120px', right: '30px'}}/>
-            <img src='/assets/icons/star-icon.png' className={`${styles.animatedIcon} ${styles.star}`} style={{top: '90%', left: '60px'}}/>
-            <img src='/assets/icons/music-icon.png' className={`${styles.animatedIcon} ${styles.music}`} style={{top: '93%', right: '60px'}}/>
+            <img src='/assets/icons/brush-icon.png' className={`${styles.animatedIcon} ${styles.brush}`} style={{top: '160px', left: '5%'}}/>
+            <img src='/assets/icons/star-icon.png' className={`${styles.animatedIcon} ${styles.star}`} style={{bottom: '40px', right: '3%'}}/>
         </div>
     )
 }
