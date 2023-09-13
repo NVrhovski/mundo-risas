@@ -13,21 +13,21 @@ const Footer = () => {
                         <p>info@mundorisas.com</p>
                     </Link>
                 </div>
-                <Link href={'tel:+541164338628'}>
+                <Link href={'tel:+541164338628'} target='_blank'>
                     <p className={styles.phone}>+54 11 6433-8628</p>
                 </Link>
                 <div className={styles.iconsContainer}>
-                    <Link href={'https://www.instagram.com/salonmundorisas'}>
+                    <Link href={'https://www.instagram.com/salonmundorisas'} target='_blank'>
                         <div className={styles.icon}>
                             <img src='assets/icons/instagram-icon.png' alt='Instagram'/>
                         </div>
                     </Link>
-                    <Link href={'https://www.facebook.com/mundo.risas.16'}>
+                    <Link href={'https://www.facebook.com/mundo.risas.16'} target='_blank'>
                         <div className={styles.icon}>
                             <img src='assets/icons/facebook-icon.png' alt='Facebook'/>
                         </div>
                     </Link>
-                    <Link href={'https://wa.me/1164338628'}>
+                    <Link href={'https://wa.me/1164338628'} target='_blank'>
                         <div className={styles.icon}>
                             <img src='assets/icons/whatsapp-icon.png' alt='Whatsapp'/>
                         </div>
