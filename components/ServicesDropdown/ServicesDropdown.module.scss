@@ -83,41 +83,28 @@
     }
     .modalBody
     {
-        width: 60%;
-        height: 400px;
+        width: 80%;
+        height: 70vh;
         background-color: $main-black;
         border-radius: 10px;
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px;
+        padding: 50px 20px;
         border: 2px solid $main-yellow;
         transition: all 400ms ease-in-out;
-        @media (max-width: 1000px)
-        {
-            width: 80%;
-            height: 70vh;
-            padding: 50px 20px;
-            overflow: scroll;
-        }
+        overflow-y: scroll;
         img
         {
             position: absolute;
             top: 10px;
             right: 10px;
-            width: 30px;
+            width: 20px;
             cursor: pointer;
             border-radius: 50%;
             transition: all 400ms ease-in-out;
-            @media (max-width: 1000px)
-            {
-                border: 2px solid $main-yellow;
-            }
-            &:hover
-            {
-                border: 2px solid $main-yellow;
-            }
+            border: 2px solid $main-yellow;
         }
         span
         {
@@ -128,12 +115,21 @@
                 text-align: center;
             }
         }
-        p
+        .descriptionContainer
         {
-            text-align: center;
-            margin: 30px 0 0 0 ;
-            color: white;
-            font-weight: 300;
+            width: 100%;
+            height: auto;
+            color: $main-yellow;
+            padding: 10px 0 0 0;
+            text-align: start;
+            h4
+            {
+                text-transform: uppercase;
+            }
+            ul
+            {
+                padding: 0 0 0 15px;
+            }
         }
     }
 }

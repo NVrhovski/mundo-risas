@@ -37,9 +37,8 @@ const Header = ({isMobile}: IPropsHeader) => {
                             <ul className={styles.sections}>
                                 <li onClick={(() => {toggleNavbar(false)})}><Link href={'#inicio'}>Inicio</Link></li>
                                 <li onClick={(() => {toggleNavbar(false)})}><Link href={'#servicios'}>Servicios</Link></li>
-                                <li onClick={(() => {toggleNavbar(false)})}><Link href={''}>Galería</Link></li>
+                                <li onClick={(() => {toggleNavbar(false)})}><Link href={'#galeria'}>Galería</Link></li>
                                 <li onClick={(() => {toggleNavbar(false)})}><Link href={'#reservas'}>Reservas</Link></li>
-                                <li onClick={(() => {toggleNavbar(false)})}><Link href={''}>Testimonios</Link></li>
                                 <li onClick={(() => {toggleNavbar(false)})}><Link href={'#contacto'}>Contacto</Link></li>
                             </ul>
                         </nav>
@@ -50,9 +49,8 @@ const Header = ({isMobile}: IPropsHeader) => {
                     <ul className={styles.sections}>
                         <li><Link href={'#inicio'}>Inicio</Link></li>
                         <li><Link href={'#servicios'}>Servicios</Link></li>
-                        <li><Link href={''}>Galería</Link></li>
+                        <li><Link href={'#galeria'}>Galería</Link></li>
                         <li><Link href={'#reservas'}>Reservas</Link></li>
-                        <li><Link href={''}>Testimonios</Link></li>
                         <li><Link href={'#contacto'}>Contacto</Link></li>
                     </ul>
                 </nav>}

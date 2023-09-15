@@ -1,28 +1,12 @@
-import Head from 'next/head'
-import Map from '../components/Map'
-import ImageGallery from '../components/ImageGallery'
-import Services from '../components/Services'
-import Contact from '../components/Contact'
-import { useMediaQuery } from 'react-responsive'
-import HelpBadge from '../components/HelpBadge'
-import { useEffect, useState } from 'react'
-import Hero from '../components/Hero'
+import Head from "next/head";
+import Bases from "../../components/Bases";
 
-export default function Home() {
+export default function Sorteo(){
 
-  const isMobile = useMediaQuery({query: '(max-width: 1000px)'})
-  const [showBadge, setShowBadge] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setShowBadge(true)
-    },5000)
-  },[])
-
-  return (
-    <div>
-      <Head>
-        <title>Salón Mundo Risas</title>
+    return(
+        <>
+        <Head>
+        <title>Salón Mundo Risas | Sorteo</title>
         <meta name="description" content="El salón de fiestas perfecto para vos" />
         <meta name="robots" content="all"/>
         <meta name="author" content="Salón Mundo Risas"/>
@@ -38,17 +22,8 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"></link>
-      </Head>
-      <Hero/>
-      <Services isMobile={isMobile}/>
-      <ImageGallery isMobile={isMobile}/>
-      <Contact/>
-      <Map/>
-      {isMobile ? '' : 
-          showBadge ? 
-          <HelpBadge setShowBadge={setShowBadge}/>
-          : ''
-      }
-    </div>
-  )
+        </Head>
+        <Bases/>
+        </>
+    )
 }

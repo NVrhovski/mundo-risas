@@ -24,7 +24,7 @@ const HelpBadge = ({setShowBadge}: IPropsHelpBadge) => {
                 <p>¿Cómo puedo ayudarte?</p>
                 <img className={styles.badgeIcon} src='assets/icons/brand-icon.png' alt='Mundo Risas'/>
             </Link>
-            <img onClick={(() => {setShowBadge(false)})} className={styles.closeIcon} src='assets/icons/close-icon.png' alt='cerrar'/>
+            <img onClick={(() => {setShowBadge(false)})} className={styles.closeIcon} src='assets/icons/white-close-icon.png' alt='cerrar'/>
         </div>
     )
 }
