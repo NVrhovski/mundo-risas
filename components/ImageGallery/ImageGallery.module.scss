@@ -8,10 +8,21 @@
     padding: 20px;
     display: flex;
     justify-content: center;
+    position: relative;
     @media (max-width: 1000px) 
     {
         height: auto;
         padding: 0   
+    }
+    .idAnchor
+    {
+        position: absolute;
+        left: 0px;
+        top: -75px;
+        @media (max-width: 1000px) 
+        {
+            top: -55px;
+        }
     }
     .swiperWrapper
     {
@@ -66,7 +77,11 @@
             padding: 10px;
             @media (max-width: 1000px)
             {
-                display: none;
+                left: 3%;
+                z-index: 1;
+                top: 26vw;
+                width: 35px;
+                height: 35px;
             }
             &:hover
             {
@@ -93,7 +108,11 @@
             padding: 10px;
             @media (max-width: 1000px)
             {
-                display: none;
+               right: 3%;
+               z-index: 1;
+               top: 26vw;
+               width: 35px;
+               height: 35px;
             }
             &:hover
             {

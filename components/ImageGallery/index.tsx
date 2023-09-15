@@ -14,7 +14,8 @@ const ImageGallery = ({isMobile}: IPropsGallery) => {
     let swiper = useRef<any>(null);
     
     return (
-        <div className={styles.mainGalleryContainer} id='galeria'>
+        <div className={styles.mainGalleryContainer}>
+            <div className={styles.idAnchor} id='galeria'></div>
             <div className={styles.swiperWrapper}>
                 <Swiper
                 modules={[Autoplay]}

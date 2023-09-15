@@ -6,7 +6,7 @@ const Footer = () => {
         <footer id='contacto'>
             <div className={styles.footerContainer}>
                 <Link href={'https://goo.gl/maps/D6aHSTpbmvZhw6UX6'} target='_blank'>
-                    <p>Pueyrredón 2136, B1653 Villa Ballester, Provincia de Buenos Aires, Argentina</p>
+                    <p>Pueyrredón 2136, B1653 Villa&nbsp;Ballester, Provincia de Buenos Aires, Argentina</p>
                 </Link>
                 <div className={styles.mailContainer}>
                     <Link href={'mailto:info@mundorisas.com'}>
