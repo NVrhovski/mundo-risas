@@ -19,12 +19,12 @@ const ServicesDropdown = ({id, title, description}: IPropsServicesDropdown) => {
         if(dropdownState)
         {
             arrowRef.current.style.transform = 'rotate(90deg)'
-            dropdownRef.current.style.height = '0'
+            dropdownRef.current.style.maxHeight = '0'
             setDropdownState(false);
         }else
         {
             arrowRef.current.style.transform = 'rotate(0deg)'
-            dropdownRef.current.style.height = '340px'
+            dropdownRef.current.style.maxHeight = '1000px'
             setDropdownState(true);
         }
     }
