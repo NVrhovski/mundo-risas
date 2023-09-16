@@ -24,7 +24,7 @@ const Header = ({isMobile}: IPropsHeader) => {
         <header>
             <div className={styles.headerContainer}>
                 <div className={styles.badgeContainer}>
-                    <Link href={'#inicio'}>
+                    <Link href={'/#inicio'}>
                         <img src={'/assets/icons/brand-icon-bw.png'} alt={'Mundo Risas'} className={styles.brandImage}/>
                     </Link>
                 </div>
