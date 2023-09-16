@@ -5,9 +5,21 @@
     width: 100%;
     height: auto;
     background-color: $main-yellow;
-    img 
+    // background-image: url('../../public/assets/images/bases-background.jpg');
+    background-color: $main-black;
+    background-size: contain;
+    margin: 75px 0 0 0;
+    padding: 30px 50px;
+    border-top: 2px solid $main-yellow;
+    @media (max-width: 1000px) {
+        margin: 55px 0 0 0;
+    }
+    h1 
     {
-        width: 100%;
-        height: auto;
+        color: $main-yellow;
+    }
+    p
+    {
+        color: $main-yellow;
     }
 }
