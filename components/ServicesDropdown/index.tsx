@@ -48,7 +48,7 @@ const ServicesDropdown = ({id, title, description}: IPropsServicesDropdown) => {
         <div className={styles.dropdownMainContainer}>
             <div className={styles.header} onClick={toggleDropdown}>
                 <span>{title}</span>
-                <img src='assets/icons/arrow-icon.png' alt='abrir/cerrar' ref={arrowRef}/>
+                <img src='/assets/icons/arrow-icon.png' alt='abrir/cerrar' ref={arrowRef}/>
             </div>
             <div className={styles.body} ref={dropdownRef}>
                 <p>{description}</p>
@@ -58,7 +58,7 @@ const ServicesDropdown = ({id, title, description}: IPropsServicesDropdown) => {
         {showModal ? 
             <div className={styles.modalContainer}>
                 <div className={styles.modalBody} ref={modalRef}>
-                    <img onClick={(() => {toggleModal(false)})} src='assets/icons/close-icon.png' alt='cerrar'/>
+                    <img onClick={(() => {toggleModal(false)})} src='/assets/icons/close-icon.png' alt='cerrar'/>
                     <span>{title}</span>
                     {id == 1 ?
                     <>

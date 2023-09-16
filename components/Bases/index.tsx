@@ -4,7 +4,6 @@ const Bases = () => {
     
     return(
         <div className={styles.mainBasesContainer}>
-            {/* <img src='assets/images/bases-background.jpg'/> */}
             <h1>Bases y Condiciones del "Sorteo 10 años de Mundo Risas"</h1>
             <p>1. Podrán participar del siguiente sorteo (en adelante “PROMOCIÒN”) organizado por MUNDO RISAS (en adelante “EL ORGANIZADOR o LA EMPRESA”) todas las personas que cumplan los siguientes requisitos:
                 <br/>

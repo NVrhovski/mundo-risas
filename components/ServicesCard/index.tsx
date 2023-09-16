@@ -53,7 +53,7 @@ const ServicesCard = ({id, image, title, description}: IPropsServicesCard) => {
             {showModal ? 
             <div className={styles.modalContainer}>
                 <div className={styles.modalBody} ref={modalRef}>
-                    <img onClick={(() => {toggleModal(false)})} src='assets/icons/close-icon.png' alt='cerrar'/>
+                    <img onClick={(() => {toggleModal(false)})} src='/assets/icons/close-icon.png' alt='cerrar'/>
                     <span>{title}</span>
                     {id == 1 ?
                     <>

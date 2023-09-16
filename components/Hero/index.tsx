@@ -14,13 +14,13 @@ const Hero = () => {
         id='inicio'
         >
             <SwiperSlide>
-                    <img className={styles.sliderImage} src='assets/images/gallery-1.jpg' alt='Salón Mundo Risas'/>
+                    <img className={styles.sliderImage} src='/assets/images/gallery-1.jpg' alt='Salón Mundo Risas'/>
             </SwiperSlide>
             <SwiperSlide>
-                    <img className={styles.sliderImage} src='assets/images/gallery-12.jpg' alt='Salón Mundo Risas'/>
+                    <img className={styles.sliderImage} src='/assets/images/gallery-12.jpg' alt='Salón Mundo Risas'/>
             </SwiperSlide>
             <SwiperSlide>
-                    <img className={styles.sliderImage} src='assets/images/gallery-8.jpg' alt='Salón Mundo Risas'/>
+                    <img className={styles.sliderImage} src='/assets/images/gallery-8.jpg' alt='Salón Mundo Risas'/>
             </SwiperSlide>
         </Swiper>
     )
