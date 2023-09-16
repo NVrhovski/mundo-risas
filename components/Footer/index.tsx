@@ -27,7 +27,7 @@ const Footer = () => {
                             <img src='/assets/icons/facebook-icon.png' alt='Facebook'/>
                         </div>
                     </Link>
-                    <Link href={'https://wa.me/1164338628'} target='_blank'>
+                    <Link href={'https://wa.me/+541164338628'} target='_blank'>
                         <div className={styles.icon}>
                             <img src='/assets/icons/whatsapp-icon.png' alt='Whatsapp'/>
                         </div>
