@@ -75,14 +75,14 @@ const ServicesDropdown = ({id, title, description}: IPropsServicesDropdown) => {
                             <li>Disfraces y vestidos</li>
                             <li>Just Dance - Humo, luces, lluvia de burbujas</li>
                         </ul>
-                        <h4>SERVICIO ADULTOS</h4>
+                        <h3>SERVICIO ADULTOS</h3>
                         <ul>
                             <li>1 asistente</li>
                             <li>Vajilla completa</li>
                             <li>Café, Mate, Te - LIBRE</li>
                             <li>Mantelería</li>
                         </ul>
-                        <h4>Menú niños:</h4>
+                        <h3>Menú niños:</h3>
                         <ul>
                             <li>Panchos</li>
                             <li>Patitas y caritas Smile</li>
@@ -108,14 +108,14 @@ const ServicesDropdown = ({id, title, description}: IPropsServicesDropdown) => {
                             <li>Souvenir para los invitados</li>
                             <li>Regalo especial para el cumpleañero</li>
                         </ul>
-                        <h4>SERVICIO ADULTOS</h4>
+                        <h3>SERVICIO ADULTOS</h3>
                         <ul>
                             <li>1 asistente</li>
                             <li>Vajilla completa</li>
                             <li>Café, Mate, Te - LIBRE</li>
                             <li>Mantelería</li>
                         </ul>
-                        <h4>Menú teen's:</h4>
+                        <h3>Menú teen's:</h3>
                         <ul>
                             <li>Panchos</li>
                             <li>Patitas y caritas Smile</li>
@@ -129,10 +129,10 @@ const ServicesDropdown = ({id, title, description}: IPropsServicesDropdown) => {
                     <>
                     <div className={styles.descriptionContainer}>
                         <p>Duración 3 horas</p>
-                        <h4>Incluye:</h4>
+                        <h3>Incluye:</h3>
                         <p>Adultos: 70</p>
                         <p>Niños: 30</p>
-                        <h4>DJ</h4>
+                        <h3>DJ</h3>
                         <ul>
                             <li>3 animadoras</li>
                             <li>Piñata</li>
@@ -142,7 +142,7 @@ const ServicesDropdown = ({id, title, description}: IPropsServicesDropdown) => {
                             <li>Disfraces y vestidos</li>
                             <li>Animación para adultos y chicos</li>
                         </ul>
-                        <h4>SERVICIO ADULTOS</h4>
+                        <h3>SERVICIO ADULTOS</h3>
                         <ul>
                             <li>3 camareros</li>
                             <li>Vajilla completa</li>
@@ -150,7 +150,7 @@ const ServicesDropdown = ({id, title, description}: IPropsServicesDropdown) => {
                             <li>Mantelería completa</li>
                             <li>Proyector</li>
                         </ul>
-                        <h4>Menú niños:</h4>
+                        <h3>Menú niños:</h3>
                         <ul>
                             <li>Panchos</li>
                             <li>Patitas y caritas Smile</li>
@@ -164,7 +164,7 @@ const ServicesDropdown = ({id, title, description}: IPropsServicesDropdown) => {
                     <>
                     <div className={styles.descriptionContainer}>
                         <p>Duración 3 horas y media</p>
-                        <h4>Incluye:</h4>
+                        <h3>Incluye:</h3>
                         <ul>
                             <li>Servicio de animación para niños y adultos</li>
                             <li>DJ</li>
@@ -175,19 +175,19 @@ const ServicesDropdown = ({id, title, description}: IPropsServicesDropdown) => {
                             <li>Arcade Multi-juegos</li>
                             <li>Consolas Ps4, Xbox, Wii</li>
                         </ul>
-                        <h4>Servicio adultos</h4>
+                        <h3>Servicio adultos</h3>
                         <ul>
                             <li>Camareros</li>
                             <li>Vajilla completa</li>
                             <li>Café, Mate, Te - LIBRE</li> 
                             <li>Mantelería</li>
                         </ul>
-                        <h4>Menú a elección para los chicos:</h4>
+                        <h3>Menú a elección para los chicos:</h3>
                         <ul>
                             <li>Nuggets de pollo, Caritas Smile y Pizzetas</li>
                             <li>Panchos y Pizzetasa</li>
                         </ul>
-                        <h4>Menú adultos:</h4>
+                        <h3>Menú adultos:</h3>
                         <ul>
                             <li>Empanadas</li>
                             <li>Brusquetas</li>
