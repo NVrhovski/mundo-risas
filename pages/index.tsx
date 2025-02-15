@@ -15,7 +15,7 @@ export default function Home() {
   const LDJSON = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Mundo Risas",
+    "name": "Salón Mundo Risas",
     "image": "https://mundorisas.com/favicon.ico",
     "@id": "",
     "url": "https://mundorisas.com",
@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Salón Mundo Risas</title>
+        <title>Salón Mundo Risas | Villa Ballester</title>
         <meta name="description" content="El salón de fiestas perfecto para vos" />
         <meta name="robots" content="all"/>
         <meta name="author" content="Salón Mundo Risas"/>
@@ -46,7 +46,7 @@ export default function Home() {
         <meta name="theme-color" content="#FECE1A" />
         <link rel="apple-touch-icon" href="/favicon.ico"></link>
         <link rel="apple-touch-icon-precomposed" href="/favicon.ico"></link>
-        <link href='localhost:3000' rel='canonical'/>
+        <link href='https://mundorisas.com/' rel='canonical'/>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
@@ -54,7 +54,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"></link>
-        <meta property="og:title" content="Salón Mundo Risas" />
+        <meta property="og:title" content="Salón Mundo Risas | Villa Ballester" />
         <meta property="og:description" content="El salón de fiestas perfecto para vos" />
         <meta property="og:locale" content="es_ES" />
         <meta property="og:type" content="website" />
