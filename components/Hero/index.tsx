@@ -10,7 +10,7 @@ const Hero = () => {
         slidesPerView={1}   
         loop
         autoplay
-        style={{backgroundColor: '#f8ccba'}}
+        style={{backgroundColor: '#150958'}}
         id='inicio'
         >
             <SwiperSlide>

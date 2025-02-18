@@ -1,0 +1,21 @@
+@import '../../styles/variables.scss';
+
+
+.aboutMainContainer{
+    background-color: $main-black;
+    padding: 2rem 20%;
+    text-align: center;
+    @media (max-width: 1000px)
+    {
+        padding: 1rem 20px;
+    }
+    h2{
+        color: $main-yellow;
+        font-size: 40px;
+        margin: 30px 0;
+        font-family: 'Lemon Days';
+    }
+    p{
+        color: $main-yellow
+    }
+}

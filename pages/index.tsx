@@ -7,6 +7,7 @@ import { useMediaQuery } from 'react-responsive'
 import HelpBadge from '../components/HelpBadge'
 import { useEffect, useState } from 'react'
 import Hero from '../components/Hero'
+import AboutUs from '../components/AboutUs'
 
 export default function Home() {
 
@@ -66,6 +67,7 @@ export default function Home() {
         />
       </Head>
       <Hero/>
+      <AboutUs/>
       <Services isMobile={isMobile}/>
       <ImageGallery isMobile={isMobile}/>
       <Contact/>
